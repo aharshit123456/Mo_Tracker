@@ -101,6 +101,10 @@ class _passwordDetailsState extends State<PasswordDetail> {
                     onSubmitted: (String password) {
                       setState(() {
                         signUpNewUser(password);
+                        SnackBar(
+                          behavior: SnackBarBehavior.floating,
+                          content: Text('Kindly verify your email before proceeding forward'),
+                        );
                         Navigator.push(
                             context,
                             MaterialPageRoute(

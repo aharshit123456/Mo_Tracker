@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:mo_tracker/dashboard.dart';
+import 'package:mo_tracker/mainNav.dart';
 import 'package:mo_tracker/nameDetails.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -33,7 +34,7 @@ class _splashScreen extends State<Splash> {
     final session = sharedPreferences.getString('user');
 
     if (session != null){
-      Navigator.pushReplacement(context, PageTransition(type: PageTransitionType.leftToRight, child: Dashboard()));
+      Navigator.pushReplacement(context, PageTransition(type: PageTransitionType.leftToRight, child: MainNav()));
     }else{
       Navigator.pushReplacement(context, PageTransition(type: PageTransitionType.leftToRight, child: NameDetail()));
 
