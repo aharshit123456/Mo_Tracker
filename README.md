@@ -4,13 +4,14 @@ A Period Tracker and Heat Pad Controller
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Supabase Screenshots
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[auth]: https://github.com/aharshit123456/Mo_Tracker/blob/master/AuthSupabase.png "Auth"
+ 
+[database]: https://github.com/aharshit123456/Mo_Tracker/blob/master/DbSupabase.png "Database"
+
+## Apk for installation
+
+[Download from here] (https://github.com/aharshit123456/Mo_Tracker/blob/master/app-release.apk)
