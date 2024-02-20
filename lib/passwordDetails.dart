@@ -70,7 +70,7 @@ class _passwordDetailsState extends State<PasswordDetail> {
               SizedBox(height: 50),
               SizedBox(height: 16),
               Text(
-                "Surekha",
+                widget.name + ",",
                 style: TextStyle(
                   fontFamily: "Gothic A1",
                   fontSize: 36,
