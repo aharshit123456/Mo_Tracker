@@ -12,3 +12,6 @@ A Period Tracker and Heat Pad Controller
  
 [database]: https://github.com/aharshit123456/Mo_Tracker/blob/master/DbSupabase.png "Database"
 
+## Apk for installation
+
+[Download from here] (https://github.com/aharshit123456/Mo_Tracker/blob/master/app-release.apk)
