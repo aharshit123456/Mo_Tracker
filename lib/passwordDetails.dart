@@ -39,6 +39,23 @@ class _passwordDetailsState extends State<PasswordDetail> {
 
     final sharedPreferences = await SharedPreferences.getInstance();
     sharedPreferences.setString('user', res2.user.toString());
+
+    if (res2.user?.emailConfirmedAt != null){
+      Navigator.push(
+      context,
+      MaterialPageRoute(
+      builder: (context) => AgeDetail(widget.name)));
+    }else{
+      final snackBar = SnackBar(
+        behavior: SnackBarBehavior.floating,
+        content: Text('Kindly verify your email before proceeding forward'),
+      );
+
+      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+
+    }
+
+
   }
 
   /*
@@ -101,14 +118,7 @@ class _passwordDetailsState extends State<PasswordDetail> {
                     onSubmitted: (String password) {
                       setState(() {
                         signUpNewUser(password);
-                        SnackBar(
-                          behavior: SnackBarBehavior.floating,
-                          content: Text('Kindly verify your email before proceeding forward'),
-                        );
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => AgeDetail(widget.name)));
+
                       });
                     },
                     style: TextStyle(color: Colors.black, fontSize: 16),
